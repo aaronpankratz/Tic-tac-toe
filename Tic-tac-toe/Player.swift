@@ -8,8 +8,14 @@
 
 import Foundation
 
+protocol PlayerDelegate {
+    func getSpaceForPlayer(player: Player) -> Space
+}
+
 class Player: AnyObject {
-    func pickSpace() -> Space {
-        preconditionFailure("This method must be overridden")
+    var delegate: PlayerDelegate!
+
+    func pickSpace(game: Game) -> Space {
+        return self.delegate.getSpaceForPlayer(self)
     }
 }

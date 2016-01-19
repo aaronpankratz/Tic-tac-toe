@@ -16,9 +16,4 @@ class Turn: AnyObject {
         self.player = player
         self.space = space
     }
-    
-    func marks(space: Space) -> Bool {
-        return false
-    }
-    
 }

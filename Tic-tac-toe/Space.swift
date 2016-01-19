@@ -8,5 +8,7 @@
 
 import Foundation
 
+// 9 unique spaces
+
 class Space: AnyObject {
 }

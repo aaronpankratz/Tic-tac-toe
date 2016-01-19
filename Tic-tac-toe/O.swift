@@ -9,8 +9,4 @@
 import Foundation
 
 class O: Player {
-    override func pickSpace() -> Space {
-        // TODO implement
-        return Space()
-    }
 }

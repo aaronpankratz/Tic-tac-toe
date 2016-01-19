@@ -11,14 +11,12 @@
 		D5663E601C4EC5AF003E8EB1 /* X.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5663E5F1C4EC5AF003E8EB1 /* X.swift */; };
 		D5663E621C4EC5BD003E8EB1 /* O.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5663E611C4EC5BD003E8EB1 /* O.swift */; };
 		D5663E641C4EC5D1003E8EB1 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5663E631C4EC5D1003E8EB1 /* Game.swift */; };
-		D5663E661C4EC5E2003E8EB1 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5663E651C4EC5E2003E8EB1 /* Grid.swift */; };
 		D5663E681C4EC5F2003E8EB1 /* Turn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5663E671C4EC5F2003E8EB1 /* Turn.swift */; };
 		D5663E6A1C4EC605003E8EB1 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5663E691C4EC605003E8EB1 /* Space.swift */; };
-		D56B784E1C4EC4E800E7FEAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56B78491C4EC4E800E7FEAF /* ViewController.swift */; };
+		D56B784E1C4EC4E800E7FEAF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56B78491C4EC4E800E7FEAF /* GameViewController.swift */; };
 		D56B784F1C4EC4E800E7FEAF /* TileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56B784A1C4EC4E800E7FEAF /* TileButton.swift */; };
 		D56B78501C4EC4E800E7FEAF /* TileCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D56B784B1C4EC4E800E7FEAF /* TileCollectionView.xib */; };
 		D56B78511C4EC4E800E7FEAF /* TileCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56B784C1C4EC4E800E7FEAF /* TileCollectionViewDataSource.swift */; };
-		D56B78521C4EC4E800E7FEAF /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56B784D1C4EC4E800E7FEAF /* GameEngine.swift */; };
 		D5F7A8A81C4DDBC100611F98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F7A8A71C4DDBC100611F98 /* AppDelegate.swift */; };
 		D5F7A8AD1C4DDBC100611F98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5F7A8AB1C4DDBC100611F98 /* Main.storyboard */; };
 		D5F7A8AF1C4DDBC100611F98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5F7A8AE1C4DDBC100611F98 /* Assets.xcassets */; };
@@ -49,14 +47,12 @@
 		D5663E5F1C4EC5AF003E8EB1 /* X.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = X.swift; sourceTree = "<group>"; };
 		D5663E611C4EC5BD003E8EB1 /* O.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = O.swift; sourceTree = "<group>"; };
 		D5663E631C4EC5D1003E8EB1 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		D5663E651C4EC5E2003E8EB1 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		D5663E671C4EC5F2003E8EB1 /* Turn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Turn.swift; sourceTree = "<group>"; };
 		D5663E691C4EC605003E8EB1 /* Space.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
-		D56B78491C4EC4E800E7FEAF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "View Controllers/ViewController.swift"; sourceTree = "<group>"; };
+		D56B78491C4EC4E800E7FEAF /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = "View Controllers/GameViewController.swift"; sourceTree = "<group>"; };
 		D56B784A1C4EC4E800E7FEAF /* TileButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TileButton.swift; path = Views/TileButton.swift; sourceTree = "<group>"; };
 		D56B784B1C4EC4E800E7FEAF /* TileCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TileCollectionView.xib; path = Views/TileCollectionView.xib; sourceTree = "<group>"; };
 		D56B784C1C4EC4E800E7FEAF /* TileCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TileCollectionViewDataSource.swift; path = Views/TileCollectionViewDataSource.swift; sourceTree = "<group>"; };
-		D56B784D1C4EC4E800E7FEAF /* GameEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameEngine.swift; path = Models/GameEngine.swift; sourceTree = "<group>"; };
 		D5F7A8A41C4DDBC100611F98 /* Tic-tac-toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tic-tac-toe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5F7A8A71C4DDBC100611F98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5F7A8AC1C4DDBC100611F98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,12 +95,10 @@
 		D56B78461C4EC42700E7FEAF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D56B784D1C4EC4E800E7FEAF /* GameEngine.swift */,
 				D5663E5D1C4EC59A003E8EB1 /* Player.swift */,
 				D5663E5F1C4EC5AF003E8EB1 /* X.swift */,
 				D5663E611C4EC5BD003E8EB1 /* O.swift */,
 				D5663E631C4EC5D1003E8EB1 /* Game.swift */,
-				D5663E651C4EC5E2003E8EB1 /* Grid.swift */,
 				D5663E671C4EC5F2003E8EB1 /* Turn.swift */,
 				D5663E691C4EC605003E8EB1 /* Space.swift */,
 			);
@@ -124,7 +118,7 @@
 		D56B78481C4EC44300E7FEAF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D56B78491C4EC4E800E7FEAF /* ViewController.swift */,
+				D56B78491C4EC4E800E7FEAF /* GameViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -314,13 +308,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D56B784E1C4EC4E800E7FEAF /* ViewController.swift in Sources */,
+				D56B784E1C4EC4E800E7FEAF /* GameViewController.swift in Sources */,
 				D5663E641C4EC5D1003E8EB1 /* Game.swift in Sources */,
 				D5663E6A1C4EC605003E8EB1 /* Space.swift in Sources */,
 				D5663E621C4EC5BD003E8EB1 /* O.swift in Sources */,
-				D5663E661C4EC5E2003E8EB1 /* Grid.swift in Sources */,
 				D56B78511C4EC4E800E7FEAF /* TileCollectionViewDataSource.swift in Sources */,
-				D56B78521C4EC4E800E7FEAF /* GameEngine.swift in Sources */,
 				D56B784F1C4EC4E800E7FEAF /* TileButton.swift in Sources */,
 				D5663E5E1C4EC59A003E8EB1 /* Player.swift in Sources */,
 				D5663E681C4EC5F2003E8EB1 /* Turn.swift in Sources */,
