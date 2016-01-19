@@ -20,4 +20,29 @@ class Game: AnyObject {
         self.grid = Grid(rowCount: 3, columnCount: 3)
         self.turns = [Turn]()
     }
+    
+    func start() -> Void {
+        // TODO implement
+    }
+    
+    func isInProgress() -> Bool {
+        let winner = self.getWinner()
+        if (winner != nil) {
+            return false
+        }
+        else {
+            return true
+        }
+    }
+    
+    func getPlayerUpNext() -> Player {
+        // TODO implement
+        return Player()
+    }
+    
+    func getWinner() -> Player? {
+        // TODO implement
+        return Player()
+    }
+
 }

@@ -9,7 +9,8 @@
 import Foundation
 
 class X: Player {
-    override func takes(turn: Turn) -> Bool {
-        return false
+    override func pickSpace() -> Space {
+        // TODO implement
+        return Space()
     }
 }

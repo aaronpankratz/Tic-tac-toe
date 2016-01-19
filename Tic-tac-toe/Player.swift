@@ -9,7 +9,7 @@
 import Foundation
 
 class Player: AnyObject {
-    func takes(turn: Turn) -> Bool {
+    func pickSpace() -> Space {
         preconditionFailure("This method must be overridden")
     }
 }
