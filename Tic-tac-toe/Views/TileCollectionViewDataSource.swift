@@ -10,11 +10,7 @@ import Foundation
 import UIKit
 
 class TileCollectionViewDataSource: NSObject, UICollectionViewDataSource {
-    var stateMachine: StateMachine
     
-    init(stateMachine: StateMachine) {
-        self.stateMachine = stateMachine
-    }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if (section == 0) {
@@ -26,7 +22,7 @@ class TileCollectionViewDataSource: NSObject, UICollectionViewDataSource {
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        var cell = UICollectionViewCell()
+        let cell = UICollectionViewCell()
         return cell
     }
 }

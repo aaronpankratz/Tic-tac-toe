@@ -27,10 +27,10 @@ enum BoardColumn {
 }
 
 class TileButton: UIButton {
-    var coordinate: TileButtonCoordinate
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        
     }
 
 }
