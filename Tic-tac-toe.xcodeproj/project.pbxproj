@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D55C963D1C4DFC000060A8E1 /* TileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55C963C1C4DFC000060A8E1 /* TileButton.swift */; };
 		D5F7A8A81C4DDBC100611F98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F7A8A71C4DDBC100611F98 /* AppDelegate.swift */; };
 		D5F7A8AA1C4DDBC100611F98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F7A8A91C4DDBC100611F98 /* ViewController.swift */; };
 		D5F7A8AD1C4DDBC100611F98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5F7A8AB1C4DDBC100611F98 /* Main.storyboard */; };
@@ -14,6 +15,10 @@
 		D5F7A8B21C4DDBC100611F98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5F7A8B01C4DDBC100611F98 /* LaunchScreen.storyboard */; };
 		D5F7A8BD1C4DDBC100611F98 /* Tic_tac_toeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F7A8BC1C4DDBC100611F98 /* Tic_tac_toeTests.swift */; };
 		D5F7A8C81C4DDBC100611F98 /* Tic_tac_toeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F7A8C71C4DDBC100611F98 /* Tic_tac_toeUITests.swift */; };
+		D5F7A8D61C4DDE9800611F98 /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F7A8D51C4DDE9800611F98 /* StateMachine.swift */; };
+		D5F7A8D71C4DF23C00611F98 /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F7A8D51C4DDE9800611F98 /* StateMachine.swift */; };
+		D5F7A8D91C4DF77D00611F98 /* TileCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F7A8D81C4DF77D00611F98 /* TileCollectionView.xib */; };
+		D5F7A8DB1C4DF78E00611F98 /* TileCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F7A8DA1C4DF78E00611F98 /* TileCollectionViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D55C963C1C4DFC000060A8E1 /* TileButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileButton.swift; sourceTree = "<group>"; };
 		D5F7A8A41C4DDBC100611F98 /* Tic-tac-toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tic-tac-toe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5F7A8A71C4DDBC100611F98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5F7A8A91C4DDBC100611F98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,9 @@
 		D5F7A8C31C4DDBC100611F98 /* Tic-tac-toeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tic-tac-toeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5F7A8C71C4DDBC100611F98 /* Tic_tac_toeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tic_tac_toeUITests.swift; sourceTree = "<group>"; };
 		D5F7A8C91C4DDBC100611F98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5F7A8D51C4DDE9800611F98 /* StateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
+		D5F7A8D81C4DF77D00611F98 /* TileCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TileCollectionView.xib; sourceTree = "<group>"; };
+		D5F7A8DA1C4DF78E00611F98 /* TileCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileCollectionViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +108,10 @@
 			children = (
 				D5F7A8A71C4DDBC100611F98 /* AppDelegate.swift */,
 				D5F7A8A91C4DDBC100611F98 /* ViewController.swift */,
+				D5F7A8D81C4DF77D00611F98 /* TileCollectionView.xib */,
+				D5F7A8DA1C4DF78E00611F98 /* TileCollectionViewDataSource.swift */,
+				D55C963C1C4DFC000060A8E1 /* TileButton.swift */,
+				D5F7A8D51C4DDE9800611F98 /* StateMachine.swift */,
 				D5F7A8AB1C4DDBC100611F98 /* Main.storyboard */,
 				D5F7A8AE1C4DDBC100611F98 /* Assets.xcassets */,
 				D5F7A8B01C4DDBC100611F98 /* LaunchScreen.storyboard */,
@@ -230,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5F7A8B21C4DDBC100611F98 /* LaunchScreen.storyboard in Resources */,
+				D5F7A8D91C4DF77D00611F98 /* TileCollectionView.xib in Resources */,
 				D5F7A8AF1C4DDBC100611F98 /* Assets.xcassets in Resources */,
 				D5F7A8AD1C4DDBC100611F98 /* Main.storyboard in Resources */,
 			);
@@ -257,6 +271,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5F7A8AA1C4DDBC100611F98 /* ViewController.swift in Sources */,
+				D5F7A8DB1C4DF78E00611F98 /* TileCollectionViewDataSource.swift in Sources */,
+				D5F7A8D61C4DDE9800611F98 /* StateMachine.swift in Sources */,
+				D55C963D1C4DFC000060A8E1 /* TileButton.swift in Sources */,
 				D5F7A8A81C4DDBC100611F98 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5F7A8BD1C4DDBC100611F98 /* Tic_tac_toeTests.swift in Sources */,
+				D5F7A8D71C4DF23C00611F98 /* StateMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +502,7 @@
 				D5F7A8CE1C4DDBC100611F98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5F7A8CF1C4DDBC100611F98 /* Build configuration list for PBXNativeTarget "Tic-tac-toeTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +511,7 @@
 				D5F7A8D11C4DDBC100611F98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5F7A8D21C4DDBC100611F98 /* Build configuration list for PBXNativeTarget "Tic-tac-toeUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +520,7 @@
 				D5F7A8D41C4DDBC100611F98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
