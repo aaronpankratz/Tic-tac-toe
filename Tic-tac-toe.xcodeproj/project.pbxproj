@@ -14,9 +14,9 @@
 		D5663E681C4EC5F2003E8EB1 /* Turn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5663E671C4EC5F2003E8EB1 /* Turn.swift */; };
 		D5663E6A1C4EC605003E8EB1 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5663E691C4EC605003E8EB1 /* Space.swift */; };
 		D56B784E1C4EC4E800E7FEAF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56B78491C4EC4E800E7FEAF /* GameViewController.swift */; };
-		D56B784F1C4EC4E800E7FEAF /* TileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56B784A1C4EC4E800E7FEAF /* TileButton.swift */; };
-		D56B78501C4EC4E800E7FEAF /* TileCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D56B784B1C4EC4E800E7FEAF /* TileCollectionView.xib */; };
-		D56B78511C4EC4E800E7FEAF /* TileCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56B784C1C4EC4E800E7FEAF /* TileCollectionViewDataSource.swift */; };
+		D5F1C6421C507F9A000141C9 /* UIGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F1C63C1C507F9A000141C9 /* UIGridView.m */; };
+		D5F1C6431C507F9A000141C9 /* UIGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F1C63E1C507F9A000141C9 /* UIGridViewCell.m */; };
+		D5F1C6441C507F9A000141C9 /* UIGridViewRow.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F1C6411C507F9A000141C9 /* UIGridViewRow.m */; };
 		D5F7A8A81C4DDBC100611F98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F7A8A71C4DDBC100611F98 /* AppDelegate.swift */; };
 		D5F7A8AD1C4DDBC100611F98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5F7A8AB1C4DDBC100611F98 /* Main.storyboard */; };
 		D5F7A8AF1C4DDBC100611F98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5F7A8AE1C4DDBC100611F98 /* Assets.xcassets */; };
@@ -50,9 +50,14 @@
 		D5663E671C4EC5F2003E8EB1 /* Turn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Turn.swift; sourceTree = "<group>"; };
 		D5663E691C4EC605003E8EB1 /* Space.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
 		D56B78491C4EC4E800E7FEAF /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = "View Controllers/GameViewController.swift"; sourceTree = "<group>"; };
-		D56B784A1C4EC4E800E7FEAF /* TileButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TileButton.swift; path = Views/TileButton.swift; sourceTree = "<group>"; };
-		D56B784B1C4EC4E800E7FEAF /* TileCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TileCollectionView.xib; path = Views/TileCollectionView.xib; sourceTree = "<group>"; };
-		D56B784C1C4EC4E800E7FEAF /* TileCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TileCollectionViewDataSource.swift; path = Views/TileCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		D5F1C63A1C507F9A000141C9 /* Tic-tac-toe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tic-tac-toe-Bridging-Header.h"; sourceTree = "<group>"; };
+		D5F1C63B1C507F9A000141C9 /* UIGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIGridView.h; path = Views/UIGridView/UIGridView.h; sourceTree = "<group>"; };
+		D5F1C63C1C507F9A000141C9 /* UIGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIGridView.m; path = Views/UIGridView/UIGridView.m; sourceTree = "<group>"; };
+		D5F1C63D1C507F9A000141C9 /* UIGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIGridViewCell.h; path = Views/UIGridView/UIGridViewCell.h; sourceTree = "<group>"; };
+		D5F1C63E1C507F9A000141C9 /* UIGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIGridViewCell.m; path = Views/UIGridView/UIGridViewCell.m; sourceTree = "<group>"; };
+		D5F1C63F1C507F9A000141C9 /* UIGridViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIGridViewDelegate.h; path = Views/UIGridView/UIGridViewDelegate.h; sourceTree = "<group>"; };
+		D5F1C6401C507F9A000141C9 /* UIGridViewRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIGridViewRow.h; path = Views/UIGridView/UIGridViewRow.h; sourceTree = "<group>"; };
+		D5F1C6411C507F9A000141C9 /* UIGridViewRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIGridViewRow.m; path = Views/UIGridView/UIGridViewRow.m; sourceTree = "<group>"; };
 		D5F7A8A41C4DDBC100611F98 /* Tic-tac-toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tic-tac-toe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5F7A8A71C4DDBC100611F98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5F7A8AC1C4DDBC100611F98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,9 +113,7 @@
 		D56B78471C4EC43000E7FEAF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D56B784A1C4EC4E800E7FEAF /* TileButton.swift */,
-				D56B784B1C4EC4E800E7FEAF /* TileCollectionView.xib */,
-				D56B784C1C4EC4E800E7FEAF /* TileCollectionViewDataSource.swift */,
+				D5F1C6391C507F3B000141C9 /* UIGridView */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -121,6 +124,21 @@
 				D56B78491C4EC4E800E7FEAF /* GameViewController.swift */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D5F1C6391C507F3B000141C9 /* UIGridView */ = {
+			isa = PBXGroup;
+			children = (
+				D5F1C63B1C507F9A000141C9 /* UIGridView.h */,
+				D5F1C63C1C507F9A000141C9 /* UIGridView.m */,
+				D5F1C63D1C507F9A000141C9 /* UIGridViewCell.h */,
+				D5F1C63E1C507F9A000141C9 /* UIGridViewCell.m */,
+				D5F1C63F1C507F9A000141C9 /* UIGridViewDelegate.h */,
+				D5F1C6401C507F9A000141C9 /* UIGridViewRow.h */,
+				D5F1C6411C507F9A000141C9 /* UIGridViewRow.m */,
+				D5F1C63A1C507F9A000141C9 /* Tic-tac-toe-Bridging-Header.h */,
+			);
+			name = UIGridView;
 			sourceTree = "<group>";
 		};
 		D5F7A89B1C4DDBC100611F98 = {
@@ -280,7 +298,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D56B78501C4EC4E800E7FEAF /* TileCollectionView.xib in Resources */,
 				D5F7A8B21C4DDBC100611F98 /* LaunchScreen.storyboard in Resources */,
 				D5F7A8AF1C4DDBC100611F98 /* Assets.xcassets in Resources */,
 				D5F7A8AD1C4DDBC100611F98 /* Main.storyboard in Resources */,
@@ -310,13 +327,14 @@
 			files = (
 				D56B784E1C4EC4E800E7FEAF /* GameViewController.swift in Sources */,
 				D5663E641C4EC5D1003E8EB1 /* Game.swift in Sources */,
+				D5F1C6421C507F9A000141C9 /* UIGridView.m in Sources */,
 				D5663E6A1C4EC605003E8EB1 /* Space.swift in Sources */,
 				D5663E621C4EC5BD003E8EB1 /* O.swift in Sources */,
-				D56B78511C4EC4E800E7FEAF /* TileCollectionViewDataSource.swift in Sources */,
-				D56B784F1C4EC4E800E7FEAF /* TileButton.swift in Sources */,
+				D5F1C6441C507F9A000141C9 /* UIGridViewRow.m in Sources */,
 				D5663E5E1C4EC59A003E8EB1 /* Player.swift in Sources */,
 				D5663E681C4EC5F2003E8EB1 /* Turn.swift in Sources */,
 				D5663E601C4EC5AF003E8EB1 /* X.swift in Sources */,
+				D5F1C6431C507F9A000141C9 /* UIGridViewCell.m in Sources */,
 				D5F7A8A81C4DDBC100611F98 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,10 +477,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Tic-tac-toe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "aaronpankratz.Tic-tac-toe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tic-tac-toe/Tic-tac-toe-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -470,10 +491,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Tic-tac-toe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "aaronpankratz.Tic-tac-toe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tic-tac-toe/Tic-tac-toe-Bridging-Header.h";
 			};
 			name = Release;
 		};

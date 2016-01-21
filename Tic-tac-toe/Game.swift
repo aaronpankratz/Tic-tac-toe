@@ -11,12 +11,14 @@ import Foundation
 class Game: AnyObject {
     var playerOne: Player
     var playerTwo: Player
-    var turns: [Turn]
+    var availableTurns: NSOrderedSet
+    var turnHistory: [Turn]
     
     init(playerOne: Player, playerTwo: Player) {
         self.playerOne = playerOne
         self.playerTwo = playerTwo
-        self.turns = [Turn]()
+        self.turnHistory = [Turn]()
+        self.availableTurns = Space.getInitialSpaces()
     }
     
     func isInProgress() -> Bool {
@@ -31,7 +33,7 @@ class Game: AnyObject {
     }
     
     func getPlayerUpNext() -> Player {
-        if ((self.turns.count % 2) == 0) {
+        if ((self.turnHistory.count % 2) == 0) {
             return self.playerOne
         }
         else {
@@ -41,7 +43,7 @@ class Game: AnyObject {
     
     func getWinner() -> Player? {
         // TODO handle draw
-        if (self.turns.count < 5) {
+        if (self.turnHistory.count < 5) {
             return nil
         }
         

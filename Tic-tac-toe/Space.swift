@@ -11,4 +11,19 @@ import Foundation
 // 9 unique spaces
 
 class Space: AnyObject {
+    var id: Int
+    
+    init(id: Int) {
+        self.id = id
+    }
+    
+    class func getInitialSpaces() -> NSOrderedSet {
+        let initialSpaces = NSMutableOrderedSet()
+        
+        for (var i = 0; i < 9; ++i) {
+            let space = Space(id: i)
+            initialSpaces.addObject(space)
+        }
+        return initialSpaces
+    }
 }
