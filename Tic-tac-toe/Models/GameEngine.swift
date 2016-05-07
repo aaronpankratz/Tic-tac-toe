@@ -13,7 +13,6 @@ class GameEngine {
     private var marks = [Mark?](count:10, repeatedValue: nil)
     private var computerStrategy: ComputerStrategy = FirstAvailable()
     
-    // returns computer's cell
     func pickCell(cellId: Int) {
         marks[cellId] = Mark(playerSymbol: "X", cellId: cellId)
         guard !checkForWinner() else {
