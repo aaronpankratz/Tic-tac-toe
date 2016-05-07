@@ -26,7 +26,7 @@ class GameEngine {
         if let mark = markOptional {
             marks[mark.cellId] = mark;
             let userInfo = ["ComputerMark" : mark]
-            NSNotificationCenter.defaultCenter().postNotificationName("GameEngineComputerMarkComplete", object: self, userInfo: userInfo)
+            NSNotificationCenter.defaultCenter().postNotificationName("GameEngineComputerTurnComplete", object: self, userInfo: userInfo)
         }
         guard !checkForWinner() else {
             return;

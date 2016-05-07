@@ -15,7 +15,7 @@ class GameViewController: UIViewController {
         NSNotificationCenter.defaultCenter()
             .addObserver(self, selector: #selector(foundWinner), name: "GameEngineFoundWinner", object: nil)
         NSNotificationCenter.defaultCenter()
-            .addObserver(self, selector: #selector(computerMarkComplete), name: "GameEngineComputerMarkComplete", object: nil)
+            .addObserver(self, selector: #selector(computerTurnComplete), name: "GameEngineComputerTurnComplete", object: nil)
         NSNotificationCenter.defaultCenter()
             .addObserver(self, selector: #selector(startOver), name: "GameEngineStartOverComplete", object: nil)
         NSNotificationCenter.defaultCenter()
@@ -31,7 +31,7 @@ class GameViewController: UIViewController {
         gameEngine.pickCell(sender.tag!)
     }
     
-    func computerMarkComplete(note: NSNotification) {
+    func computerTurnComplete(note: NSNotification) {
         if let userInfo = note.userInfo {
             let mark = userInfo["ComputerMark"] as! Mark
             if let button = self.view.viewWithTag(mark.cellId) as? UIButton {
