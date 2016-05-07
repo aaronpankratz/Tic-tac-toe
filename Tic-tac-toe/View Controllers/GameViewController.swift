@@ -8,66 +8,71 @@
 
 import UIKit
 
-class GameViewController: UIViewController, PlayerDelegate, UIGridViewDelegate {
-    var game: Game!
+class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.resetGame()
-        self.playGame()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    func resetGame() -> Void {
-        let x = X()
-        x.delegate = self
-        let o = O()
-        o.delegate = self
-        
-        self.game = Game(playerOne: x, playerTwo: o)
+        NSNotificationCenter.defaultCenter()
+            .addObserver(self, selector: #selector(foundWinner), name: "GameEngineFoundWinner", object: nil)
+        NSNotificationCenter.defaultCenter()
+            .addObserver(self, selector: #selector(computerMarkComplete), name: "GameEngineComputerMarkComplete", object: nil)
+        NSNotificationCenter.defaultCenter()
+            .addObserver(self, selector: #selector(startOver), name: "GameEngineStartOverComplete", object: nil)
+        NSNotificationCenter.defaultCenter()
+            .addObserver(self, selector: #selector(foundTie), name: "GameEngineFoundTie", object: nil)
     }
     
-    func playGame() -> Void {
-        while(self.game.isInProgress()) {
-            let player = self.game.getPlayerUpNext()
-            let space = player.pickSpace(self.game)
-            let turn = Turn(player: player, space: space)
-            self.game.turnHistory.append(turn)
+    private var gameEngine = GameEngine()
+    
+    @IBAction func pickCell(sender: AnyObject) {
+        let button = sender as! UIButton
+        button.setTitle("X", forState: .Normal)
+        button.enabled = false
+        gameEngine.pickCell(sender.tag!)
+    }
+    
+    func computerMarkComplete(note: NSNotification) {
+        if let userInfo = note.userInfo {
+            let mark = userInfo["ComputerMark"] as! Mark
+            if let button = self.view.viewWithTag(mark.cellId) as? UIButton {
+                button.setTitle(mark.playerSymbol, forState: .Normal)
+                button.enabled = false
+            }
         }
-        
-        NSLog("game complete! winner is: \(self.game.getWinner())")
     }
     
-    func getSpaceForPlayer(player: Player) -> Space {
-        return Space(id: 0)
+    func foundWinner(note: NSNotification) {
+        if let userInfo = note.userInfo {
+            let mark = userInfo["WinnerMark"] as! Mark
+
+            let alert = UIAlertController(title: "Winner",
+                                      message: "\(mark.playerSymbol) wins!",
+                                      preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Start Over", style: .Default, handler: { action in
+                self.gameEngine.startOver()
+            }))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
     }
     
-    func gridView(grid: UIGridView!, widthForColumnAt columnIndex: Int) -> CGFloat {
-        return 80.0
+    func foundTie(note: NSNotificationCenter) {
+        let alert = UIAlertController(title: "Tie",
+                                      message: "It's a tie!",
+                                      preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Start Over", style: .Default, handler: { action in
+            self.gameEngine.startOver()
+        }))
+        self.presentViewController(alert, animated: true, completion: nil)
+
     }
     
-    func gridView(grid: UIGridView!, heightForRowAt rowIndex: Int) -> CGFloat {
-        return 80.0
-    }
-    
-    func numberOfColumnsOfGridView(grid: UIGridView!) -> Int {
-        return 3
-    }
-    
-    func numberOfCellsOfGridView(grid: UIGridView!) -> Int {
-        return 9
-    }
-    
-    func gridView(grid: UIGridView!, cellForRowAt rowIndex: Int, andColumnAt columnIndex: Int) -> UIGridViewCell! {
-        return UIGridViewCell()
-    }
-    
-    func gridView(grid: UIGridView!, didSelectRowAt rowIndex: Int, andColumnAt columnIndex: Int) {
-        
+    func startOver(note: NSNotification) {
+        for i in 1...9 {
+            if let button = self.view.viewWithTag(i) as? UIButton {
+                button.setTitle("", forState: .Normal)
+                button.enabled = true
+            }
+        }
     }
 }
 
