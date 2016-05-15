@@ -10,6 +10,7 @@
 		D50F92041CDD70AF00C5CA5B /* ComputerStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F92031CDD70AF00C5CA5B /* ComputerStrategy.swift */; };
 		D50F92061CDD7BBB00C5CA5B /* FirstAvailable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F92051CDD7BBB00C5CA5B /* FirstAvailable.swift */; };
 		D56B784E1C4EC4E800E7FEAF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56B78491C4EC4E800E7FEAF /* GameViewController.swift */; };
+		D5B623571CE824990072026F /* TTTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B623561CE824990072026F /* TTTButton.swift */; };
 		D5EE82201CDC34FD00BB740F /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EE821F1CDC34FD00BB740F /* GameEngine.swift */; };
 		D5EE82221CDC37AA00BB740F /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EE82211CDC37AA00BB740F /* Mark.swift */; };
 		D5F7A8A81C4DDBC100611F98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F7A8A71C4DDBC100611F98 /* AppDelegate.swift */; };
@@ -41,6 +42,7 @@
 		D50F92031CDD70AF00C5CA5B /* ComputerStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ComputerStrategy.swift; path = Models/ComputerStrategy.swift; sourceTree = "<group>"; };
 		D50F92051CDD7BBB00C5CA5B /* FirstAvailable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstAvailable.swift; path = Models/FirstAvailable.swift; sourceTree = "<group>"; };
 		D56B78491C4EC4E800E7FEAF /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = "View Controllers/GameViewController.swift"; sourceTree = "<group>"; };
+		D5B623561CE824990072026F /* TTTButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTTButton.swift; path = Views/TTTButton.swift; sourceTree = "<group>"; };
 		D5EE821F1CDC34FD00BB740F /* GameEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameEngine.swift; path = Models/GameEngine.swift; sourceTree = "<group>"; };
 		D5EE82211CDC37AA00BB740F /* Mark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mark.swift; path = Models/Mark.swift; sourceTree = "<group>"; };
 		D5F7A8A41C4DDBC100611F98 /* Tic-tac-toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tic-tac-toe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				D5F7A8AB1C4DDBC100611F98 /* Main.storyboard */,
+				D5B623561CE824990072026F /* TTTButton.swift */,
 				D5F7A8B01C4DDBC100611F98 /* LaunchScreen.storyboard */,
 			);
 			name = Views;
@@ -302,6 +305,7 @@
 			files = (
 				D5EE82221CDC37AA00BB740F /* Mark.swift in Sources */,
 				D56B784E1C4EC4E800E7FEAF /* GameViewController.swift in Sources */,
+				D5B623571CE824990072026F /* TTTButton.swift in Sources */,
 				D50F92041CDD70AF00C5CA5B /* ComputerStrategy.swift in Sources */,
 				D5EE82201CDC34FD00BB740F /* GameEngine.swift in Sources */,
 				D50F92061CDD7BBB00C5CA5B /* FirstAvailable.swift in Sources */,
